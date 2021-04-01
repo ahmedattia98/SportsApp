@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NFw-5t-H0I">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NFw-5t-H0I">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -332,7 +332,7 @@
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar.badge.clock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8GR-GV-kaK">
                                                                         <rect key="frame" x="0.0" y="1.5" width="99.5" height="139"/>
-                                                                        <color key="tintColor" systemColor="systemPurpleColor"/>
+                                                                        <color key="tintColor" red="0.99494368654822329" green="0.46561362640610071" blue="0.17438291588144705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="98" id="2JL-jh-LeX"/>
                                                                         </constraints>
@@ -362,7 +362,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" red="0.96205899699999997" green="0.76449805660000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="backgroundColor" red="0.99494368654822329" green="0.91547817912437091" blue="0.83191090552884539" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstItem="G0M-Ea-CHP" firstAttribute="top" secondItem="lhu-Ay-elg" secondAttribute="top" constant="30" id="1c1-85-7e6"/>
                                                                     <constraint firstItem="G0M-Ea-CHP" firstAttribute="leading" secondItem="8GR-GV-kaK" secondAttribute="trailing" constant="8" symbolic="YES" id="5Z3-s7-Wrs"/>
@@ -451,7 +451,7 @@
                                                                         <rect key="frame" x="142" y="77" width="40" height="40"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                                                        <color key="textColor" red="1" green="0.51582919245855485" blue="0.050456466114675136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E74-Rw-CWF">
@@ -491,7 +491,7 @@
                                                                     </label>
                                                                 </subviews>
                                                             </view>
-                                                            <color key="backgroundColor" red="0.97376454732201878" green="0.68633977294322912" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="backgroundColor" red="0.83971789158302179" green="0.71101944679374418" blue="0.89415450507614214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <size key="customSize" width="324" height="216"/>
                                                             <connections>
                                                                 <outlet property="dateOfEvent" destination="dhV-5E-bHp" id="fcm-AK-dZg"/>
@@ -846,7 +846,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AmD-yr-haZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.97420954866755138" green="0.78796305454995397" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" systemColor="labelColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -865,14 +865,14 @@
         <image name="social-facebook-box-blue-icon" width="256" height="256"/>
         <image name="sport" width="32" height="32"/>
         <image name="youtube" width="32" height="32"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
