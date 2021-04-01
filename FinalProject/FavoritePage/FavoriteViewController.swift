@@ -24,6 +24,7 @@ class FavoriteViewController: UIViewController {
         self.tableView.reloadData()
     }
     
+    
     func fetchCoreData(){
         do{
             self.favorites = try context.fetch(FavoriteLeague.fetchRequest())
@@ -85,7 +86,9 @@ extension FavoriteViewController:UITableViewDelegate,UITableViewDataSource{
         setID.details.id = favorites![indexPath.row].id!
             
             self.present(eventView, animated: true) {
-               // eventView.favBtn.isHidden=true
+                eventView.favBtn.isHidden=true
+               
+                eventView.leagueNameLable.text = self.favorites![indexPath.row].name
             }
         
         }

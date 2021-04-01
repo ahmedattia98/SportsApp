@@ -18,7 +18,7 @@ class LeaguesDetailesViewController: UIViewController{
     
     @IBOutlet weak var favBtn: UIButton!
     
-    static var isFavorite = false
+    var isFavorite = false
     var favLeague = [NSManagedObject]()
     var myIndex=0
    
@@ -35,11 +35,11 @@ class LeaguesDetailesViewController: UIViewController{
    // override func viewWillAppear(_ animated: Bool) {}
     
     @IBAction func favoriteAction(_ sender: Any) {
-        if LeaguesDetailesViewController.isFavorite == false
+        if isFavorite == false
        {
             addFav()
        }
-        else if LeaguesDetailesViewController.isFavorite == true
+        else if isFavorite == true
        {
         DeleteFavouriteLeague()
        }
@@ -56,7 +56,7 @@ class LeaguesDetailesViewController: UIViewController{
             if i.value(forKeyPath: "id") as? String == self.Leagueid{
                 self.favBtn.setBackgroundImage(UIImage(systemName: "heart.fill"), for: .normal)
                 self.myIndex=count
-                LeaguesDetailesViewController.isFavorite = true
+                isFavorite = true
             }
             count += 1
         }
@@ -72,7 +72,7 @@ class LeaguesDetailesViewController: UIViewController{
         do{
             try context?.save()
             self.fetchFav()
-            LeaguesDetailesViewController.isFavorite = true
+            isFavorite = true
                 self.favBtn.setBackgroundImage(UIImage(systemName: "heart.fill"), for: .normal)
             print("data saved")
         }catch let error as NSError{
@@ -84,7 +84,7 @@ class LeaguesDetailesViewController: UIViewController{
         do{
             try context?.save()
             print("deleted here")
-            LeaguesDetailesViewController.isFavorite = false
+            isFavorite = false
             self.favBtn.setBackgroundImage(UIImage(systemName: "heart"), for: .normal)
         }catch let error as NSError{
             print("Not Deleted")
