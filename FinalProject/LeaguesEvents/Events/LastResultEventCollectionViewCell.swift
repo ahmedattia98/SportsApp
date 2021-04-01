@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LastResultCollectionViewCell: UICollectionViewCell {
+class LastResultEventCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var secondNum: UILabel!
     @IBOutlet weak var firstNum: UILabel!
     @IBOutlet weak var teamOne: UILabel!

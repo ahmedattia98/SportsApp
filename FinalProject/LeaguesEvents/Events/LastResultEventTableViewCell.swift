@@ -10,7 +10,7 @@ import Alamofire
 import SVProgressHUD
 
 
-class LastResultTableViewCell: UITableViewCell{
+class LastResultEventTableViewCell: UITableViewCell{
    
     @IBOutlet weak var LastResultCollectionView: UICollectionView!
     var idEvent :String!
@@ -63,7 +63,7 @@ class LastResultTableViewCell: UITableViewCell{
     }
 }
 
-extension LastResultTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
+extension LastResultEventTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrayEvents.count
     }
@@ -71,7 +71,7 @@ extension LastResultTableViewCell: UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
      
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "lastresultcollection", for: indexPath) as! LastResultCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "lastresultcollection", for: indexPath) as! LastResultEventCollectionViewCell
         cell.teamOne.text=arrayEvents[indexPath.row].strHomeTeam
         cell.teamTwo.text=arrayEvents[indexPath.row].strAwayTeam
         cell.dateOfEvent.text=arrayEvents[indexPath.row].strTimeLocal
