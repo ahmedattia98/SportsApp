@@ -8,7 +8,7 @@
 import UIKit
 import Alamofire
 import SVProgressHUD
-class UpCommingTableViewCell: UITableViewCell {
+class UpComingEventTableCell: UITableViewCell {
 
     @IBOutlet weak var upCommiingCollection: UICollectionView!
     var idEvent :String!
@@ -57,7 +57,7 @@ class UpCommingTableViewCell: UITableViewCell {
     }
 
 }
-extension UpCommingTableViewCell:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
+extension UpComingEventTableCell:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrayEvents.count
     }

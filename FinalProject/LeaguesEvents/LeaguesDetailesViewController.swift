@@ -111,7 +111,7 @@ extension LeaguesDetailesViewController:UITableViewDelegate,UITableViewDataSourc
         
    if (indexPath.section==0)
         {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tablecell", for: indexPath) as! UpCommingTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tablecell", for: indexPath) as! UpComingEventTableCell
         cell.configure(upcomming: true)
             return cell
             
