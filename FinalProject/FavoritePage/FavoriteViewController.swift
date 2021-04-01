@@ -58,7 +58,7 @@ extension FavoriteViewController:UITableViewDelegate,UITableViewDataSource{
         if (self.favorites![indexPath.row].youtubeURL != nil)
         {
         let linkVC = self.storyboard?.instantiateViewController(identifier: "WepKitController")
-            as! WepKitController
+            as! WebKitView
         let stringUrl = self.favorites![indexPath.row].youtubeURL
         linkVC.urlValue = "https://" + stringUrl!
         self.present(linkVC, animated: true, completion: nil)

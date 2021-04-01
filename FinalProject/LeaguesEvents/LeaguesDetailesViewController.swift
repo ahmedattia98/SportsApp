@@ -18,7 +18,11 @@ class LeaguesDetailesViewController: UIViewController{
     
     @IBOutlet weak var favBtn: UIButton!
     
+//<<<<<<< Updated upstream
     var isFavorite = false
+//=======
+ //    var isFavorite = false
+//>>>>>>> Stashed changes
     var favLeague = [NSManagedObject]()
     var myIndex=0
    

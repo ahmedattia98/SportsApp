@@ -1,5 +1,5 @@
 //
-//  WepKitController.swift
+//  WebKitView.swift
 //  FinalProject
 //
 //  Created by Ahmed Attia on 3/29/21.
@@ -9,7 +9,7 @@ import UIKit
 import WebKit
 
 
-class WepKitController: UIViewController {
+class WebKitView: UIViewController {
 
     var urlValue:String?
     

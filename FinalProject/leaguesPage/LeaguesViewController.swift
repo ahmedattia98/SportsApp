@@ -123,7 +123,7 @@ class LeaguesViewController: UIViewController,UITableViewDelegate,UITableViewDat
         if (self.arrleaguesOfId![indexPath.row].leagueYoutube != nil)
         {
         let linkVC = self.storyboard?.instantiateViewController(identifier: "WepKitController")
-            as! WepKitController
+            as! WebKitView
             let stringUrl = self.arrleaguesOfId![indexPath.row].leagueYoutube
         linkVC.urlValue = "https://" + stringUrl!
         self.present(linkVC, animated: true, completion: nil)

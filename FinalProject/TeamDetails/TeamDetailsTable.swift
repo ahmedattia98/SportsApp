@@ -69,7 +69,7 @@ class TeamDetailsTable: UITableViewController {
             if (self.arrDetails.strWebsite != nil)
             {
             let linkVC = self.storyboard?.instantiateViewController(identifier: "WepKitController")
-                as! WepKitController
+                as! WebKitView
             let stringUrl = self.arrDetails.strWebsite
             linkVC.urlValue = "https://" + stringUrl!
             self.present(linkVC, animated: true, completion: nil)
@@ -82,7 +82,7 @@ class TeamDetailsTable: UITableViewController {
             if (self.arrDetails.strFacebook != nil)
             {
             let linkVC = self.storyboard?.instantiateViewController(identifier: "WepKitController")
-                as! WepKitController
+                as! WebKitView
             let stringUrl = self.arrDetails.strFacebook
             linkVC.urlValue = "https://" + stringUrl!
             self.present(linkVC, animated: true, completion: nil)
@@ -96,7 +96,7 @@ class TeamDetailsTable: UITableViewController {
             if (self.arrDetails.strYoutube != nil)
             {
             let linkVC = self.storyboard?.instantiateViewController(identifier: "WepKitController")
-                as! WepKitController
+                as! WebKitView
             let stringUrl = self.arrDetails.strYoutube
             linkVC.urlValue = "https://" + stringUrl!
             self.present(linkVC, animated: true, completion: nil)
