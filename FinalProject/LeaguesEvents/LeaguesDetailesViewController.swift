@@ -124,7 +124,7 @@ extension LeaguesDetailesViewController:UITableViewDelegate,UITableViewDataSourc
             
             return cell
    }else{
-    let cell = tableView.dequeueReusableCell(withIdentifier: "teamcell", for: indexPath) as! TeamTableViewCell
+    let cell = tableView.dequeueReusableCell(withIdentifier: "teamcell", for: indexPath) as! TeamsTableViewCell
     cell.configure(team: true)
         
         return cell

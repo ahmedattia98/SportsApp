@@ -9,7 +9,7 @@ import UIKit
 import Alamofire
 import SVProgressHUD
 import SDWebImage
-class TeamTableViewCell: UITableViewCell{
+class TeamsTableViewCell: UITableViewCell{
     
     @IBOutlet weak var teamCollectionView: UICollectionView!
     
@@ -59,7 +59,7 @@ class TeamTableViewCell: UITableViewCell{
     }
 
 }
-extension TeamTableViewCell:UICollectionViewDelegate,UICollectionViewDataSource{
+extension TeamsTableViewCell:UICollectionViewDelegate,UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrayTeams.count
     }
